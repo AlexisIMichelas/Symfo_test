@@ -3,9 +3,9 @@
 {% block title %}Hello JeuController!{% endblock %}
 
 {% block body %}
-    <h1>{{ jeu.nom }}</h1>
+    <h1 class="text-center bg-primary">{{ jeu.nom }}</h1>
     <p>{{ jeu.description }}</p>
-    <a href="{{ path('app_main') }}">Revenir à la liste</a>
+    <a href="{{ path('app_homepage') }}">Revenir à la liste</a>
 {% endblock %}
 
 

@@ -10,7 +10,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class MainController extends AbstractController
 {
-    #[Route('/main', name: 'app_main')]
+    #[Route('/main', name: 'app_homepage')]
     public function index(EntityManagerInterface $entityManager): Response
     {
         $jeux = $entityManager->getRepository(Jeu::class)->findAll();

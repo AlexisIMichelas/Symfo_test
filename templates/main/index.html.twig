@@ -14,13 +14,13 @@
 		}
 	</style>
 
-	<div class="example-wrapper">
+	<div class="text-center bg-secondary">
 		<h1>Bienvenue sur Loca Jeu</h1>
 
 		<p>Une page factice permettant louer de faux jeux de sociétés.</p>
 
 		<p>Voici la liste des jeux référencés sur le site :</p>
-{# 
+
 		<ul>
 			{% for jeu in jeux %}
 				<li>
@@ -28,7 +28,7 @@
 					<a href="{{ path('app_jeu_detail', {'id': jeu.id}) }}">Voir</a>
 				</li>
 			{% endfor %}
-		</ul> #}
+		</ul>
 
 	</div>
 {% endblock %}
